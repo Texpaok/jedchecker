@@ -30,24 +30,25 @@ JHtml::script('media/com_jedchecker/js/police.js');
 		<form action="<?php echo JRoute::_('index.php?option=com_jedchecker&view=uploads'); ?>"
 			  method="post" class="form form-validate" name="adminForm" id="adminForm" enctype="multipart/form-data">
 			<fieldset>
-				<p>
-					<?php echo JText::sprintf('COM_JEDCHECKER_CONGRATS', 'http://extensions.joomla.org/about-jed/terms-of-service#listings'); ?>
-				</p>
+			
+				<div class="alert alert-info" role="alert">
+					<p>
+						<?php echo JText::sprintf('COM_JEDCHECKER_CONGRATS', 'http://extensions.joomla.org/about-jed/terms-of-service#listings'); ?>
+					</p>
 
-				<p>
-					<?php echo JText::sprintf('COM_JEDCHECKER_CODE_STANDARDS', 'http://developer.joomla.org/coding-standards.html', 'https://github.com/compojoom/jedchecker'); ?>
-				</p>
+					<p>
+						<?php echo JText::sprintf('COM_JEDCHECKER_CODE_STANDARDS', 'http://developer.joomla.org/coding-standards.html', 'https://github.com/compojoom/jedchecker'); ?>
+					</p>
 
-				<p>
-					<?php echo JText::_('COM_JEDCHECKER_HOW_TO_USE'); ?>
-				</p>
-				<ol>
-					<li> <?php echo JText::_('COM_JEDCHECKER_STEP1'); ?></li>
-					<li> <?php echo JText::_('COM_JEDCHECKER_STEP2'); ?></li>
-					<li> <?php echo JText::_('COM_JEDCHECKER_STEP3'); ?></li>
-				</ol>
-
-
+					<p>
+						<?php echo JText::_('COM_JEDCHECKER_HOW_TO_USE'); ?>
+					</p>
+					<ol>
+						<li> <?php echo JText::_('COM_JEDCHECKER_STEP1'); ?></li>
+						<li> <?php echo JText::_('COM_JEDCHECKER_STEP2'); ?></li>
+					</ol>
+				</div>
+				
 				<input type="file" name="extension" class="required"/>
 				<button onclick="Joomla.submitbutton('uploads.upload')" class="btn btn-success">
 					<span class="icon-upload "></span> <?php echo JText::_('JSUBMIT'); ?>
@@ -114,5 +115,5 @@ JHtml::script('media/com_jedchecker/js/police.js');
 <div class="copyright row-fluid">
 	<?php echo JText::sprintf('COM_JEDCHECKER_LEAVE_A_REVIEW_JED', 'http://extensions.joomla.org/extensions/tools/development-tools/21336'); ?>
 	<br/>
-	<?php echo JText::sprintf('COM_JEDCHECKER_DEVELOPED_BY', 'https://compojoom.com'); ?> :)
+	<?php echo JText::sprintf('COM_JEDCHECKER_DEVELOPED_BY', 'https://github.com/joomla-extensions/jedchecker'); ?> :)
 </div>
